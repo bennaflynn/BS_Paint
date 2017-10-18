@@ -1,0 +1,74 @@
+div {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  margin:auto;
+  border: 2px solid black;
+  height:1020px;
+  width: 1020px;
+}
+.block {
+  width: 10px;
+  height: 10px;
+  margin:0;
+  padding:0;
+  /*border: 1px dashed blue;*/
+  float: left;
+}
+.menu {
+  position: fixed;
+  left: 10px;
+  top: 40px;
+  border: 2px dashed red;
+  height: 300px;
+  width: 100px;
+  text-align: center;
+}
+.menu p {
+  margin: 0;
+  padding: 0;
+  font-family: arial;
+}
+.menu span {
+  color: red;
+  font-weight: bold;
+}
+.palet {
+  width: 40px;
+  height: 40px;
+  margin: 5px 0 0 5px;
+  float: left;
+  border: 1px solid black;
+}
+#white {
+  background-color: white;
+}
+#black {
+  background-color: black;
+}
+#red {
+  background-color: red;
+}
+#blue {
+  background-color: blue;
+}
+#green {
+  background-color: green;
+}
+#yellow {
+  background-color: yellow;
+}
+#orange {
+  background-color: orange;
+}
+#purple {
+  background-color: purple;
+}
+#aqua {
+  background-color: aqua;
+}
+#brown {
+  background-color: brown;
+}
