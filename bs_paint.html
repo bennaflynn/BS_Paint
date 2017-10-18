@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="grid.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="wrapper">
+
+  </div>
+
+  <script>
+    wrapper = document.getElementsByClassName('wrapper')[0];
+
+    for(let i = 0; i < 10404; i++) {
+      let newDiv = document.createElement('div');
+      newDiv.className = "block";
+      wrapper.appendChild(newDiv);
+    }
+    function Draw() {
+      if(isMouseDown == true) {
+        this.style.backgroundColor = 'black';
+      }
+
+    }
+    blocks = document.getElementsByClassName('block');
+
+    isMouseDown = false;
+    document.onmousedown = function() { isMouseDown = true  };
+    document.onmouseup   = function() { isMouseDown = false };
+    document.onmousemove = function()  {
+      for(let j = 0; j < blocks.length; j++) {
+          blocks[j].onmousemove = Draw
+
+      } };
+    /**/
+
+
+
+  </script>
+</body>
+</html>
